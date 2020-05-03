@@ -1,140 +1,17 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html {
   box-sizing: border-box;
 }
+
 *,
 *::before,
 ::after {
   box-sizing: inherit;
 }
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
+*,
 ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  margin: 0 px;
+  padding: 0px;
 }
 
 body {
@@ -151,20 +28,13 @@ body {
 .container {
   width: 900px;
   margin: 0 auto;
-  padding: 0 auto;
 }
 
 img {
   display: block;
+  object-fit: cover;
   max-width: 100%;
   height: auto;
-  width: 420px;
-  margin: 0px;
-  padding: 0px;
-}
-
-img {
-  object-fit: cover;
   width: 420px;
   height: 280px;
   margin: 0px;
@@ -183,6 +53,10 @@ img {
   padding: 0px;
   text-align: center;
   vertical-align: middle;
+}
+
+ul .features-list-item {
+  display: inline-block;
 }
 
 .navigation li {
@@ -233,35 +107,53 @@ img {
   padding-bottom: 37px;
 }
 
-.features-list-item p .description {
+.features-list-item p {
   font-size: 14px;
   line-height: 21px;
 }
 
-.description {
+.features-list-item {
+  margin-bottom: 130px;
+}
+ul li:nth-last-child(-n + 2) {
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+.list-conten {
+  padding: 0px;
+  margin: 0 auto;
+}
+h2 {
+  margin: 0 auto;
+  padding: 0px;
+}
+h3 {
+  font-family: 'Ubuntu';
+  font-weight: 300;
   padding-top: 26px;
   padding-bottom: 26px;
   text-transform: uppercase;
   width: 420px;
   color: #b4ad9e;
-}
-
-p {
   font-size: 14px;
+  line-height: 21px;
+  margin: 0 auto;
 }
 
 .article {
   font-family: 'Playfair Display';
-  padding-bottom: 130px;
   margin: 0px;
 }
 
 .button {
   display: block;
-  padding-bottom: 71px;
+  padding-bottom: 55px;
   text-align: center;
   margin-left: 25%;
   margin-right: 0 auto;
+  padding-top: 56px;
+  padding-bottom: 71px;
 }
 
 .cta {
@@ -271,16 +163,10 @@ p {
   width: 164px;
   height: 60px;
   font-size: 20px;
-  padding: 21px 17px;
   margin-right: 40%;
   display: inline-block;
   text-decoration: none;
   font-family: 'Playfair Display';
   text-align: center;
-}
-
-.cta:hover,
-.cta:active {
-  color: #fff;
-  background: #03a9f4;
+  background-color: white;
 }
