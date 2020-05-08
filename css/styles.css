@@ -144,16 +144,14 @@ h3 {
 }
 
 .button {
-  display: inline-block;
-  padding-bottom: 55px;
-  text-align: center;
+  display: block;
+  width: 164px;
   padding-top: 56px;
   padding-bottom: 71px;
-  text-align: justify;
+  margin: 0 auto;
 }
 
 .cta {
-  display: inline-block;
   color: #626262;
   border: 1px solid #626262;
   width: 164px;
